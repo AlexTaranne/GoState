@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Monoton", sans-serif;
+  text-align: center;
+  margin: 2rem;
+}
+
+.img-head {
+  max-width: 90%;
+  margin-left: 2rem;
+}
+
+.states-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.states-grid img {
+  width: 100%;
+  height: 6rem;
+  object-fit: cover;
+}
+
+.state-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  flex: 1 1 200px;
+  max-width: 170px;
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.2s ease;
+}
+
+.state-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
