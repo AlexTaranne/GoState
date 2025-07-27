@@ -1,0 +1,15 @@
+.flag {
+  height: 10rem;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  text-align: center;
+}
+
+.flag-name {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.4rem;
+}

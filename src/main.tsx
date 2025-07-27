@@ -4,8 +4,10 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import App from "./App.tsx";
 
+import AllStatesPage from "./pages/AllStatesPage.tsx";
 import Homepage from "./pages/Homepage.tsx";
 import StatePage from "./pages/StatePage.tsx";
+import CityPage from "./pages/CityPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
       {
         path: "/state/:stateCode",
         element: <StatePage />,
+      },
+      {
+        path: "/city/:stateCode/:villeNom",
+        element: <CityPage />,
+      },
+      {
+        path: "allstates",
+        element: <AllStatesPage />,
       },
     ],
   },
