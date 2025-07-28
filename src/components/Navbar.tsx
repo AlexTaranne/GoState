@@ -34,7 +34,7 @@ export default function Header() {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        clipPath: "circle(170% at 50% -50%)",
+        clipPath: "circle(160% at 50% -50%)",
         height: "70vh",
       }}
       className="relative overflow-hidden text-white flex items-center justify-center"

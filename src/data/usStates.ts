@@ -7,6 +7,9 @@ export interface Ville {
     hotels?: string[];
     pictures?: string[];
     landscapeImage?: string[];
+    lieuxEmblematiques?: string[];
+    museeAndCulture?: string[];
+    nature?: string[];
 }
 
 export interface USState {
@@ -48,8 +51,75 @@ const usStates: USState[] = [
         superficie: 1723337,
         surnom: "The Last Frontier",
         devise: "North to the Future",
-        villes: ["Anchorage", "Fairbanks", "Juneau", "Sitka", "Ketchikan"]
+        villes: [{
+            nom: "Anchorage",
+            lieuxEmblematiques: ["Tony Knowles Coastal Trail: Une magnifique piste cyclable et piétonne de 18 km le long de la côte.",
+                "Anchorage Museum at Rasmuson Center:  Musée majeur mêlant art, science, culture et histoire de l’Alaska.",
+                "Tony Knowles Coastal Trail: Une magnifique piste cyclable et piétonne de 18 km le long de la côte.",
+                "Alaska Native Heritage Center: Centre culturel dédié aux peuples autochtones de l’Alaska.",
+                "Flattop Mountain Trail: Randonnée populaire offrant une vue panoramique sur Anchorage et les montagnes environnantes.",],
+            restaurants: ["Fire Island Rustic Bakeshop", "Simon & Seafort's Saloon & Grill"],
+            museeAndCulture: ["Alaska Native Heritage Center: Centre culturel dédié aux peuples autochtones de l’Alaska.",
+                "Anchorage Museum at Rasmuson Center: Musée majeur mêlant art, science, culture et histoire de l’Alaska.",
+                "Alaska Aviation Museum: Musée dédié à l’histoire de l’aviation en Alaska.",
+                "Alaska Wildlife Conservation Center: Centre de conservation de la faune locale avec des animaux sauvages en semi-liberté."],
+            nature: ["Kincaid Park: Parc urbain avec des sentiers de randonnée, de vélo et des vues sur la mer.",
+                "Flattop Mountain Trail: Randonnée populaire offrant une vue panoramique sur Anchorage et les montagnes environnantes.",
+                "Tony Knowles Coastal Trail: Une magnifique piste cyclable et piétonne de 18 km le long de la côte.",
+                "Potter Marsh Bird Sanctuary: Sanctuaire d'oiseaux avec des sentiers et des observatoires."
+            ],
+            hotels: ["Hotel Captain Cook", "Alyeska Resort"],
+            pictures: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2d/b6/anchorage.jpg?w=1400&h=1400&s=1",
+                "https://www.office-tourisme-usa.com/app/uploads/2020/03/Alaska-Anchorage-Robert-Olsen.png",
+                "https://www.bellsalaska.com/wp-content/uploads/2022/10/anchorage-alaska.jpg"
+            ],
+            landscapeImage: ["https://www.greatlandadventures.com/wp-content/uploads/2023/11/anchorage-scaled.jpg"]
+        },
+        {
+            nom: "Fairbanks",
+            lieuxEmblematiques: [
+                "Pioneer Park: Parc historique avec des bâtiments anciens et des musées.",
+                "Chena River State Recreation Area: Zone de loisirs le long de la rivière Chena, idéale pour la randonnée et le kayak.",
+                "Creamer's Field Migratory Waterfowl Refuge: Sanctuaire d'oiseaux migrateurs avec des sentiers de randonnée.",
+                "Goldstream Valley Trail System: Réseau de sentiers pour la randonnée et le vélo."],
+            restaurants: ["The Pump House Restaurant & Saloon", "Sourdough Mining Company"],
+            museeAndCulture: ["University of Alaska Museum of the North: Musée présentant l'histoire naturelle et culturelle de l'Alaska.",
+                "Fairbanks Community Museum: Musée local sur l'histoire de Fairbanks.",
+                "Pioneer Park: Parc historique avec des bâtiments anciens et des musées."],
+            nature: ["Chena River State Recreation Area: Zone de loisirs le long de la rivière Chena, idéale pour la randonnée et le kayak.",
+                "Creamer's Field Migratory Waterfowl Refuge: Sanctuaire d'oiseaux migrateurs avec des sentiers de randonnée.",
+                "Goldstream Valley Trail System: Réseau de sentiers pour la randonnée et le vélo."],
+            hotels: ["Westmark Fairbanks Hotel and Conference Center", "SpringHill Suites by Marriott Fairbanks"],
+            pictures: ["https://img.budgettravel.com/usa-alaska-fairbanks/Chena-River-Winter_Fairbanks_small.jpg",
+                "https://cdn.britannica.com/98/217498-050-8A2D44E4/chena-river-fairbanks-alaska-united-states.jpg",
+                "https://www.celebritycruises.com/blog/content/uploads/2022/10/downtown-fairbanks-chena-riverwalk-view-hero.jpg"
+            ],
+            landscapeImage: ["https://www.office-tourisme-usa.com/app/uploads/2020/03/Alaska-Fairbanks-1.jpg"]
+        },
+        {
+            nom: "Juneau",
+            lieuxEmblematiques: ["Mendenhall Glacier: Glacier emblématique accessible en voiture ou en randonnée.",
+                "Mount Roberts Tramway: Téléphérique offrant une vue panoramique sur la ville et les montagnes.",
+                "Alaska State Capitol: Bâtiment du Capitole de l'État de l'Alaska.",
+                "Gastineau Channel: Zone côtière avec des sentiers et des vues sur la mer."],
+            restaurants: ["Tracy's King Crab Shack", "The Hangar on the Wharf"],
+            museeAndCulture: ["Alaska State Museum: Musée sur l'histoire et la culture de l'Alaska.",
+                "Juneau-Douglas City Museum: Musée local sur l'histoire de Juneau.",
+                "Sealaska Heritage Institute: Centre culturel dédié aux peuples autochtones de la région."],
+            nature: ["Mendenhall Glacier Recreation Area: Zone de loisirs autour du glacier Mendenhall avec des sentiers de randonnée.",
+                "Mount Roberts Trail: Sentier de randonnée menant au sommet du mont Roberts avec une vue panoramique.",
+                "Gastineau Channel Trail: Sentier côtier offrant des vues sur la mer et les montagnes."],
+            hotels: ["Four Points by Sheraton Juneau", "Alaskan Hotel and Bar"],
+            pictures: ["https://www.foodandwine.com/thmb/JnEmmgv31PZc-11M12wOfjx10rk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/best-day-in-juneau-view-from-mt-roberts-FT-BLOG0120-310f54512bef46818cf77c7c7b5bdf50.jpg",
+                "https://images.ctfassets.net/bth3mlrehms2/4D9C4ihjs08BMaLtJoMQm/ffc42c7122c206b5461585be863de819/Juneau__Alaska__USA.jpg?w=1400&q=60&fm=webp",
+                "https://www.travelalaska.com/sites/default/files/2021-12/Destinations_CitiesTowns_Juneau_Hero_%28ATIA%29_0.jpg"
+            ],
+            landscapeImage: ["https://images.squarespace-cdn.com/content/v1/5f5ac5ba627da22efe3b9f60/1674675759735-S111IGQ60WMWYL2YOQFM/Whale+Sculpture+Juneau.jpg"]
+        }
+        ]
     },
+
+
     {
         code: "arizona",
         name: "Arizona",
@@ -89,6 +159,30 @@ const usStates: USState[] = [
             {
                 nom: "Los Angeles",
                 aVoir: ["santa monica"],
+                lieuxEmblematiques: ["Hollywood Sign : le célèbre panneau perché dans les collines — belle vue depuis le Griffith Observatory ou via un petit hike.",
+                    "Hollywood Walk of Fame : étoiles des célébrités, TCL Chinese Theatre et ses empreintes de mains/pieds.",
+                    "Rodeo Drive (Beverly Hills) : pour flâner ou faire du lèche-vitrines dans le luxe.",
+                    "Venice Beach : ambiance décontractée, skate park, street art.",
+                    "Griffith Observatory : vue panoramique sur la ville et le célèbre panneau Hollywood.",
+                    "Sunset Boulevard : la route mythique de LA, surtout à West Hollywood.",
+                    "Santa Monica Pier : parc d’attractions au bord de l’océan, coucher de soleil magnifique.",
+                    "Downtown LA (DTLA) : architecture moderne (Walt Disney Concert Hall) + quartiers historiques comme El Pueblo.",
+                    "Universal Studios Hollywood : parc d’attractions et studios de cinéma.",
+                    "Disneyland Resort : le parc d’attractions emblématique à Anaheim, à proximité.",
+                    "Warner Bros. Studio Tour : visite des studios de cinéma à Burbank.",
+                ],
+                museeAndCulture: ["The Getty Center : art, architecture et jardins magnifiques.",
+                    "Los Angeles County Museum of Art (LACMA) : le plus grand musée d'art de l'ouest des États-Unis.",
+                    "The Broad : musée d'art contemporain avec une collection impressionnante.",
+                    "Hollywood Museum : dédié à l'histoire du cinéma et de la télévision.",
+                    "California Science Center : musée interactif avec l'Endeavour Space Shuttle.",
+                    "Natural History Museum of Los Angeles County : dinosaures, gemmes et plus."],
+                nature: ["Griffith Park : l'un des plus grands parcs urbains des États-Unis, avec des sentiers de randonnée et le zoo de Los Angeles.",
+                    "Runyon Canyon Park : randonnée populaire avec vue sur la ville et le panneau Hollywood.",
+                    "El Matador Beach : plage pittoresque avec des formations rocheuses uniques.",
+                    "Topanga State Park : randonnée dans les collines de Santa Monica avec des vues panoramiques.",
+                    "Malibu Creek State Park : paysages de canyon et de montagne, idéal pour la randonnée.",
+                    "Los Angeles Arboretum and Botanic Garden : jardins botaniques luxuriants à Arcadia."],
                 restaurants: ["alex coffee"],
                 hotels: ["bates motel"],
                 landscapeImage: ["https://www.airzen.fr/wp-content/uploads/2022/09/AdobeStock_400281443-scaled-e1678698392499.jpeg"],
